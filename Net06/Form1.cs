@@ -42,6 +42,7 @@ namespace Net06
         private OnWifiDelegate OnWifi = null;
 
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //ip change
