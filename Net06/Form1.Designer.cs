@@ -38,6 +38,14 @@
             this.btnRestore = new System.Windows.Forms.Button();
             this.btnDHCP = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lvAP = new System.Windows.Forms.ListView();
+            this.chSSID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chQuality = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chEnabled = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chChanel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chAlgorithm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chAuth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chMAC = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,11 +145,64 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "IP Change";
             // 
+            // lvAP
+            // 
+            this.lvAP.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chSSID,
+            this.chQuality,
+            this.chEnabled,
+            this.chChanel,
+            this.chAlgorithm,
+            this.chAuth,
+            this.chMAC});
+            this.lvAP.FullRowSelect = true;
+            this.lvAP.GridLines = true;
+            this.lvAP.Location = new System.Drawing.Point(16, 177);
+            this.lvAP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lvAP.Name = "lvAP";
+            this.lvAP.Size = new System.Drawing.Size(697, 260);
+            this.lvAP.TabIndex = 5;
+            this.lvAP.UseCompatibleStateImageBehavior = false;
+            this.lvAP.View = System.Windows.Forms.View.Details;
+            // 
+            // chSSID
+            // 
+            this.chSSID.Text = "이름";
+            this.chSSID.Width = 100;
+            // 
+            // chQuality
+            // 
+            this.chQuality.Text = "신호강도";
+            // 
+            // chEnabled
+            // 
+            this.chEnabled.Text = "암호화";
+            // 
+            // chChanel
+            // 
+            this.chChanel.Text = "채널";
+            this.chChanel.Width = 58;
+            // 
+            // chAlgorithm
+            // 
+            this.chAlgorithm.Text = "암호방식";
+            // 
+            // chAuth
+            // 
+            this.chAuth.Text = "인증방식";
+            this.chAuth.Width = 100;
+            // 
+            // chMAC
+            // 
+            this.chMAC.Text = "MAC";
+            this.chMAC.Width = 174;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lvAP);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
@@ -165,6 +226,14 @@
         private System.Windows.Forms.Button btnRestore;
         private System.Windows.Forms.Button btnDHCP;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListView lvAP;
+        private System.Windows.Forms.ColumnHeader chSSID;
+        private System.Windows.Forms.ColumnHeader chQuality;
+        private System.Windows.Forms.ColumnHeader chEnabled;
+        private System.Windows.Forms.ColumnHeader chChanel;
+        private System.Windows.Forms.ColumnHeader chAlgorithm;
+        private System.Windows.Forms.ColumnHeader chAuth;
+        private System.Windows.Forms.ColumnHeader chMAC;
     }
 }
 
